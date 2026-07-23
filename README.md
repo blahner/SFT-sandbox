@@ -36,7 +36,7 @@ Here I chose [Qwen2.5-Instruct-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B-In
 ## Data generation
 In order to finetune a model, you first need data. If you want a model to refuse to say something specific, like pizza, you probably need to craft your own dataset as one is likely not available. You can probably create such a dataset without an additional LLM by coming up with a few dozen diverse prompts about pizza and pizza related topics then a few refusal patterns you want the model to learn. Then intersperse these with normal Q&A so the model doesn't forget everything or overfit to just refusal.
 
-For the valleygirl demo here, I enlisted the help of Anthropic's Sonnet 4.6 to create multi-turn conversational examples for training, so I can vary different user responses that both engage and ignore the accent. This data generation took about two hours.
+For the valleygirl demo here, I enlisted the help of Anthropic's Sonnet 4.6 to create multi-turn conversational examples for training, so I can vary different user responses that both engage and ignore the accent. This data generation took about two hours and about $8.75 in API credits.
 
 ```bash
 uv run python src/dataset/generate_valleygirl_dataset.py
