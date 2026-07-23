@@ -1,5 +1,5 @@
 # SFT-sandbox
-This is a beginner's guide to practice supervised finetuning a LLM and host it on Huggingface for everyone to use!
+This is a beginner's guide to practice supervised finetuning (SFT) a LLM and host it on Huggingface for everyone to use!
 
 ## What can you do with this repo??
 Make your own chatbot tailored to a specific personality, like this valleygirl chatbot, and host it on huggingface!
